@@ -1,0 +1,18 @@
+.pokk{
+   flex-basis: 30%;
+  
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   height: 300px;
+   border: 1px solid black;
+   margin: 20px;
+   border-radius: 20px;
+   background-color: rgb(136, 194, 246);
+}
+.pok-img{
+    max-height: 50%;
+    min-height: 200px;
+    margin-top: 20px;
+    
+}
