@@ -1,3 +1,7 @@
+.pokemon-wrapper{
+    flex-basis: 30%;
+    display: block;
+}
 .pokk{
    flex-basis: 30%;
   
@@ -11,7 +15,7 @@
    background-color: rgb(136, 194, 246);
 }
 .pok-img{
-    max-height: 50%;
+    max-height: 200px;
     min-height: 200px;
     margin-top: 20px;
     
