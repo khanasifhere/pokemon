@@ -1,11 +1,9 @@
+import usedebounce from '../../hooks/usedebounce';
 import './Search.css'
-function Search(){
+function Search({updatesearchterm}){
+    const debouncesearchterm=usedebounce((e)=>updatesearchterm(e.target.value))
 return (
-    <>
-    <input type='text' placeholder='search the pokemon' id='search-pokemon'>
-    
-    </input>
-    </>
+    <input type="text" placeholder='search here' id='search-pokemon' onChange={debouncesearchterm} />
 )
 
 

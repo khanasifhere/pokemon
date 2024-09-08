@@ -1,15 +1,14 @@
 import './Pokemondetails.css'
 import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
 import usepokemon from '../../hooks/usepokemon';
 import Pokemon from '../Pokemon/Pokemon';
 
-function Pokemondetails(){
-    const {id}=useParams();
-    const [pokemon ,pokemonliststate]=usepokemon(id);
+function Pokemondetails({pokemonName}){
+    
+    const [pokemon ,pokemonliststate]=usepokemon(pokemonName);
     return (
        <>
-        <h1 className='pokedex_main'><Link to='/'> pokedex</Link></h1>
+        <h1 className='pokedex_main'><Link to='/'> pokedex <span className='f'>(home page)</span></Link></h1>
         {pokemon&&<div className='pokdet'>
             <div className='name'>
                 {pokemon.name}
